@@ -1,0 +1,30 @@
+{
+  "name": "Puzzle",
+  "id": "puzzle",
+  "version": "1.0.0",
+  "author": "System",
+  "description": "Classic 15-tile sliding puzzle game",
+  "icon": {
+    "char": "#",
+    "fg": 0,
+    "bg": 7
+  },
+  "window": {
+    "defaultWidth": 18,
+    "defaultHeight": 16,
+    "minWidth": 18,
+    "minHeight": 16,
+    "resizable": false,
+    "closable": true
+  },
+  "menu": [
+    {
+      "label": "Game",
+      "items": [
+        { "label": "New Game", "action": "newGame", "shortcut": "Cmd+N" }
+      ]
+    }
+  ],
+  "fileTypes": [],
+  "permissions": []
+}

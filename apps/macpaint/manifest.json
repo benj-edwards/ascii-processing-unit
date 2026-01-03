@@ -1,0 +1,54 @@
+{
+  "name": "MacPaint",
+  "id": "macpaint",
+  "version": "1.0.0",
+  "author": "System",
+  "description": "ASCII art drawing application",
+  "icon": {
+    "char": "P",
+    "fg": 0,
+    "bg": 7
+  },
+  "window": {
+    "defaultWidth": 52,
+    "defaultHeight": 20,
+    "minWidth": 25,
+    "minHeight": 10,
+    "resizable": true,
+    "closable": true
+  },
+  "menu": [
+    {
+      "label": "File",
+      "items": [
+        { "label": "New", "action": "new", "shortcut": "Cmd+N" },
+        { "label": "Open...", "action": "open", "shortcut": "Cmd+O" },
+        { "label": "Save", "action": "save", "shortcut": "Cmd+S" },
+        { "label": "Save As...", "action": "saveAs" },
+        { "label": "-" },
+        { "label": "Close", "action": "close", "shortcut": "Cmd+W" }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        { "label": "Undo", "action": "undo", "shortcut": "Cmd+Z" },
+        { "label": "-" },
+        { "label": "Clear Canvas", "action": "clear" }
+      ]
+    },
+    {
+      "label": "Tools",
+      "items": [
+        { "label": "Pencil", "action": "tool", "data": "pencil" },
+        { "label": "Brush", "action": "tool", "data": "brush" },
+        { "label": "Eraser", "action": "tool", "data": "eraser" },
+        { "label": "Line", "action": "tool", "data": "line" },
+        { "label": "Rectangle", "action": "tool", "data": "rect" },
+        { "label": "Fill", "action": "tool", "data": "fill" }
+      ]
+    }
+  ],
+  "fileTypes": [".pic", ".art"],
+  "permissions": ["filesystem.read", "filesystem.write"]
+}

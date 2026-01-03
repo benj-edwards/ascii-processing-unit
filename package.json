@@ -1,0 +1,12 @@
+{
+  "name": "apu-gui",
+  "version": "1.0.0",
+  "description": "APU-based graphical user interface with JavaScript applets",
+  "main": "gui-server/server.cjs",
+  "scripts": {
+    "start": "node gui-server/server.cjs",
+    "dev": "APU_HOST=localhost APU_PORT=6121 node gui-server/server.cjs"
+  },
+  "keywords": ["apu", "gui", "terminal", "ascii"],
+  "license": "MIT"
+}

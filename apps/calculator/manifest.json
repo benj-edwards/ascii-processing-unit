@@ -1,0 +1,23 @@
+{
+  "name": "Calculator",
+  "id": "calculator",
+  "version": "1.0.0",
+  "author": "System",
+  "description": "Simple desk calculator",
+  "icon": {
+    "char": "=",
+    "fg": 0,
+    "bg": 7
+  },
+  "window": {
+    "defaultWidth": 16,
+    "defaultHeight": 10,
+    "minWidth": 16,
+    "minHeight": 10,
+    "resizable": false,
+    "closable": true
+  },
+  "menu": [],
+  "fileTypes": [],
+  "permissions": []
+}

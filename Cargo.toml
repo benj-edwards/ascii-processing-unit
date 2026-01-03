@@ -1,0 +1,33 @@
+[package]
+name = "ascii-processing-unit"
+version = "0.1.0"
+edition = "2021"
+description = "ASCII Processing Unit - Universal character-cell display engine"
+authors = ["Benj Edwards <editor@vintagecomputing.com>"]
+license = "MIT"
+readme = "README.md"
+keywords = ["terminal", "tui", "ansi", "telnet", "ascii"]
+categories = ["command-line-interface", "game-development"]
+
+[dependencies]
+# Async runtime
+tokio = { version = "1", features = ["full"] }
+
+# JSON protocol
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# Logging
+log = "0.4"
+env_logger = "0.11"
+
+# Efficient byte handling
+bytes = "1"
+
+[[bin]]
+name = "apu-server"
+path = "src/main.rs"
+
+[lib]
+name = "ascii_processing_unit"
+path = "src/lib.rs"

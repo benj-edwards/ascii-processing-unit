@@ -1,0 +1,47 @@
+{
+  "name": "MacWrite",
+  "id": "macwrite",
+  "version": "1.0.0",
+  "author": "System",
+  "description": "Text editor for creating and editing documents",
+  "icon": {
+    "char": "A",
+    "fg": 0,
+    "bg": 7
+  },
+  "window": {
+    "defaultWidth": 40,
+    "defaultHeight": 14,
+    "minWidth": 20,
+    "minHeight": 8,
+    "resizable": true,
+    "closable": true
+  },
+  "menu": [
+    {
+      "label": "File",
+      "items": [
+        { "label": "New", "action": "new", "shortcut": "Cmd+N" },
+        { "label": "Open...", "action": "open", "shortcut": "Cmd+O" },
+        { "label": "Save", "action": "save", "shortcut": "Cmd+S" },
+        { "label": "Save As...", "action": "saveAs", "shortcut": "Cmd+Shift+S" },
+        { "label": "-" },
+        { "label": "Close", "action": "close", "shortcut": "Cmd+W" }
+      ]
+    },
+    {
+      "label": "Edit",
+      "items": [
+        { "label": "Undo", "action": "undo", "shortcut": "Cmd+Z" },
+        { "label": "-" },
+        { "label": "Cut", "action": "cut", "shortcut": "Cmd+X" },
+        { "label": "Copy", "action": "copy", "shortcut": "Cmd+C" },
+        { "label": "Paste", "action": "paste", "shortcut": "Cmd+V" },
+        { "label": "-" },
+        { "label": "Select All", "action": "selectAll", "shortcut": "Cmd+A" }
+      ]
+    }
+  ],
+  "fileTypes": [".txt", ".md", ".text"],
+  "permissions": ["filesystem.read", "filesystem.write", "clipboard"]
+}

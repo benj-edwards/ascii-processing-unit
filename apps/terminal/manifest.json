@@ -1,0 +1,54 @@
+{
+  "name": "Terminal",
+  "id": "terminal",
+  "version": "1.0.0",
+  "author": "System",
+  "description": "Telnet terminal emulator for connecting to remote hosts",
+  "icon": {
+    "char": ">_",
+    "fg": 2,
+    "bg": 0
+  },
+  "window": {
+    "defaultWidth": 62,
+    "defaultHeight": 22,
+    "minWidth": 30,
+    "minHeight": 10,
+    "resizable": true,
+    "closable": true
+  },
+  "menu": [
+    {
+      "label": "File",
+      "items": [
+        { "label": "New Window", "action": "newWindow", "shortcut": "Cmd+N" },
+        { "label": "-" },
+        { "label": "Close", "action": "close", "shortcut": "Cmd+W" }
+      ]
+    },
+    {
+      "label": "Connection",
+      "items": [
+        { "label": "Cave BBS", "action": "connect", "data": { "host": "cave.bxfoundry.com", "port": 23 } },
+        { "label": "CaveMUSH", "action": "connect", "data": { "host": "cave.bxfoundry.com", "port": 6116 } },
+        { "label": "-" },
+        { "label": "Custom...", "action": "customConnect" },
+        { "label": "-" },
+        { "label": "Disconnect", "action": "disconnect" }
+      ]
+    },
+    {
+      "label": "Settings",
+      "items": [
+        { "label": "Local Echo", "action": "toggleLocalEcho", "type": "checkbox" },
+        { "label": "-" },
+        { "label": "Line Ending: CR", "action": "setLineEnding", "data": "cr", "type": "radio", "group": "lineEnding" },
+        { "label": "Line Ending: CRLF", "action": "setLineEnding", "data": "crlf", "type": "radio", "group": "lineEnding" },
+        { "label": "-" },
+        { "label": "Fullscreen", "action": "toggleFullscreen", "shortcut": "Cmd+F" }
+      ]
+    }
+  ],
+  "fileTypes": [],
+  "permissions": ["network.connect"]
+}
