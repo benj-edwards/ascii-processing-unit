@@ -14,16 +14,6 @@ The game developer focuses on *what* to display. APU figures out *how* to displa
 
 ## Philosophy
 
-### Everything is an Object
-
-Every element on screen is an object with properties, relationships, and optional behavior:
-- Every character cell
-- Every window/panel
-- Every border
-- Every UI element
-
-Objects are owned by entities. System UI objects are owned by "God" (the system account).
-
 ### Graceful Fallback
 
 Every feature has a degradation path. Nothing breaks—it just adapts:
@@ -40,20 +30,13 @@ True Color ──► 256 Color ──► 16 Color ──► 8 Color ──► Bo
 
 ### Native Feel, Not Compromise
 
-Each platform gets its **optimal** experience, not a degraded one:
+Each platform ideally will get its **optimal** experience, not a degraded one:
 - Apple II (40 cols): Full-screen map with popup panels
 - VT-100 (80 cols): Split panels, ASCII borders
 - Modern web: Responsive layout, true color, mouse/touch
 - Mobile: Touch controls, swipe gestures, tabs
 
 The user on each platform feels like the app was designed *for* their system.
-
-### Semantic, Not Pixel-Perfect
-
-Developers work with high-level concepts:
-- "Put the chat panel beside the map"
-- "Use a gold color for highlights"
-- "Draw a double-line box"
 
 APU translates to the appropriate representation for each platform.
 
